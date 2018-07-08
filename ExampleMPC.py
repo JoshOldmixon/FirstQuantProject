@@ -1,55 +1,20 @@
 from Tkinter import *
 from sklearn import tree
 
-words1 = 1
-
-est1 = 1
-
-words2 = 1
-
-est2 = 1
-
-words3 = 1
-
-est3 = 1
-
 def click():
 	entered_text=textentry.get()
 	output.delete(0.0, END)
-	if words1 == 1:
-		word1 = "Close: "
-	else:
-		word1 = "ERROR!"
+	word1 = "Close: "
 	output.insert(END, word1)
-
-	if est1 == 1:
-		close = clf1.predict([[entered_text]])
-	else:
-		close = "ERROR!"
+	close = clf1.predict([[entered_text]])
 	output.insert(END, close)
-
-	if words2 == 1:
-		word2 = "   High: "
-	else:
-		word2 = "ERROR!"
+	word2 = "   High: "
 	output.insert(END, word2)
-
-	if est2 == 1:
-		high = clf2.predict([[entered_text]])
-	else:
-		high = "ERROR!"
+	high = clf2.predict([[entered_text]])
 	output.insert(END, high)
-
-	if words3 == 1:
-		word3 = "   Low: "
-	else:
-		word3 = "ERROR!"
+	word3 = "   Low: "
 	output.insert(END, word3)
-
-	if est3 == 1:
-		low = clf3.predict([[entered_text]])
-	else:
-		low = "ERROR!"
+	low = clf3.predict([[entered_text]])
 	output.insert(END, low)
 
 window = Tk()
