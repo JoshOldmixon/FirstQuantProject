@@ -1,2 +1,2 @@
 # StockPredictionAlg
-This is my first ever quant finance project from when I was 15 years old.
+This is my first quant finance project from when I was 15 years old.
